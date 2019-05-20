@@ -49,7 +49,7 @@ You may want to create schema in database automatically. Function `schemaSeed` s
 
 Create new [knex seed file](https://knexjs.org/#Seeds-API) and name it `schema.js`.
 
-**<your knex seeds directory>/schema.js**
+**{your knex seeds directory}/schema.js**
 ```
 const { schemaSeed } = require('knex-single-schema');
 
