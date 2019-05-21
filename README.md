@@ -16,7 +16,7 @@ yarn add knex-single-schema
 ### Quick start
 
 **knexfile.js**
-```
+```javascript
 const { withSchema } = require('knex-single-schema');
 
 // Declare schema name in connection options.
@@ -50,7 +50,7 @@ You may want to create schema in database automatically. Function `schemaSeed` s
 Create new [knex seed file](https://knexjs.org/#Seeds-API) and name it `schema.js`.
 
 **{your knex seeds directory}/schema.js**
-```
+```javascript
 const { schemaSeed } = require('knex-single-schema');
 
 exports.seed = schemaSeed;
@@ -58,7 +58,7 @@ exports.seed = schemaSeed;
 
 Now you can create schema with knex CLI command in project directory.
 ```
-knex seed:make schema.js
+npx knex seed:make schema.js
 ```
 
 ### License
